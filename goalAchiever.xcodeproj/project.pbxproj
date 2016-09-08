@@ -13,7 +13,6 @@
 		9B4057AF1D808DBB002CB0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4057AE1D808DBB002CB0F2 /* Assets.xcassets */; };
 		9B4057B21D808DBB002CB0F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4057B01D808DBB002CB0F2 /* LaunchScreen.storyboard */; };
 		9B4057BE1D80921C002CB0F2 /* SetGoalOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4057BD1D80921C002CB0F2 /* SetGoalOne.swift */; };
-		9B4057C01D809A16002CB0F2 /* SetGoalTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4057BF1D809A16002CB0F2 /* SetGoalTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		9B4057B11D808DBB002CB0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B4057B31D808DBB002CB0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4057BD1D80921C002CB0F2 /* SetGoalOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGoalOne.swift; sourceTree = "<group>"; };
-		9B4057BF1D809A16002CB0F2 /* SetGoalTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGoalTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				9B4057AB1D808DBB002CB0F2 /* Main.storyboard */,
 				9B4057A91D808DBB002CB0F2 /* HomeView.swift */,
 				9B4057BD1D80921C002CB0F2 /* SetGoalOne.swift */,
-				9B4057BF1D809A16002CB0F2 /* SetGoalTwo.swift */,
 				9B4057AE1D808DBB002CB0F2 /* Assets.xcassets */,
 				9B4057B01D808DBB002CB0F2 /* LaunchScreen.storyboard */,
 				9B4057B31D808DBB002CB0F2 /* Info.plist */,
@@ -142,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4057C01D809A16002CB0F2 /* SetGoalTwo.swift in Sources */,
 				9B4057BE1D80921C002CB0F2 /* SetGoalOne.swift in Sources */,
 				9B4057AA1D808DBB002CB0F2 /* HomeView.swift in Sources */,
 				9B4057A81D808DBB002CB0F2 /* AppDelegate.swift in Sources */,

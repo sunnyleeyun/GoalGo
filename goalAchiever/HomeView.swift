@@ -12,6 +12,7 @@ class HomeView: UIViewController {
 
     
     @IBOutlet weak var goal: UILabel!
+    var goalOut = String()
     
     @IBOutlet weak var countDownView: UIView!
     @IBOutlet weak var countDown: UILabel!
@@ -20,7 +21,7 @@ class HomeView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        goal.text = goal.text
+        goal.text! = goalOut
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: "updateCounter", userInfo: nil, repeats: true)
 
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,6 +48,6 @@ class HomeView: UIViewController {
 
 extension NSTimeInterval {
     var time:String {
-        return String(format:"%02ddays", Int(self/86400))
+        return String(format:"%02d days", Int(self/86400))
     }
 }
