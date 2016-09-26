@@ -10,7 +10,7 @@ import UIKit
 
 class HomeView: UIViewController {
 
-    
+    //
     @IBOutlet weak var goal: UILabel!
     var goalOut = String()
     
