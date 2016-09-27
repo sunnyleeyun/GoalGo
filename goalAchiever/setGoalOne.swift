@@ -49,7 +49,7 @@ class SetGoalOne: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : HomeView = segue.destinationViewController as! HomeView
         DestViewController.goalOut = goalSchoolMajor.text!
-
+        
         
     }
     
