@@ -10,9 +10,21 @@ import UIKit
 
 class HomeView: UIViewController {
 
-    //
     @IBOutlet weak var goal: UILabel!
     var goalOut = String()
+    
+    @IBOutlet weak var totalGoal: UILabel!
+    @IBOutlet weak var Mandarin: UILabel!
+    @IBOutlet weak var English: UILabel!
+    @IBOutlet weak var Math: UILabel!
+    @IBOutlet weak var SocialStudy: UILabel!
+    @IBOutlet weak var Science: UILabel!
+    var totalGoalString = String()
+    var MandarinString = String()
+    var EnglishString = String()
+    var MathString = String()
+    var SocialStudyString = String()
+    var ScienceString = String()
     
     @IBOutlet weak var countDownView: UIView!
     @IBOutlet weak var countDown: UILabel!
@@ -22,6 +34,13 @@ class HomeView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         goal.text! = goalOut
+        totalGoal.text! = totalGoalString
+        Mandarin.text! = MandarinString
+        English.text! = EnglishString
+        Math.text! = MathString
+        SocialStudy.text! = SocialStudyString
+        Science.text! = ScienceString
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: "updateCounter", userInfo: nil, repeats: true)
 
         // Do any additional setup after loading the view, typically from a nib.
