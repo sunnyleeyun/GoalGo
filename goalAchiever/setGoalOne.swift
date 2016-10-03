@@ -49,8 +49,12 @@ class SetGoalOne: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var DestViewController : HomeView = segue.destinationViewController as! HomeView
         DestViewController.goalOut = goalSchoolMajor.text!
-        
-        
+        DestViewController.totalGoalString = totalGoal.text!
+        DestViewController.MandarinString = Mandarin.text!
+        DestViewController.EnglishString = English.text!
+        DestViewController.MathString = Math.text!
+        DestViewController.SocialStudyString = SocialStudy.text!
+        DestViewController.ScienceString = Science.text!
     }
     
     
