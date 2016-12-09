@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeView: UIViewController {
-//
+
     @IBOutlet weak var goal: UILabel!
     var goalOut = String()
     
@@ -29,7 +29,7 @@ class HomeView: UIViewController {
     @IBOutlet weak var countDownView: UIView!
     @IBOutlet weak var countDown: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
-    var timer = NSTimer()
+    var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class HomeView: UIViewController {
         SocialStudy.text! = SocialStudyString
         Science.text! = ScienceString
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: "updateCounter", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target:self, selector: #selector(HomeView.updateCounter), userInfo: nil, repeats: true)
 
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -56,16 +56,16 @@ class HomeView: UIViewController {
         countDown.text = timeLeft.time
     }
     
-    @IBAction func countDownAction(sender: AnyObject) {
-        countDownView.hidden = false
+    @IBAction func countDownAction(_ sender: AnyObject) {
+        countDownView.isHidden = false
     }
     
-    @IBAction func confirmCountDown(sender: AnyObject) {
-        countDownView.hidden = true
+    @IBAction func confirmCountDown(_ sender: AnyObject) {
+        countDownView.isHidden = true
     }
 }
 
-extension NSTimeInterval {
+extension TimeInterval {
     var time:String {
         return String(format:"%02d days", Int(self/86400))
     }

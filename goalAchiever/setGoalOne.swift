@@ -18,17 +18,17 @@ class SetGoalOne: UIViewController {
     @IBOutlet weak var SocialStudy: UITextField!
     @IBOutlet weak var Science: UITextField!
     @IBOutlet weak var `switch`: UISwitch!
-    @IBAction func switchOn(sender: AnyObject) {
-        if `switch`.on{
-            itemOne.hidden = false
-            scoreOne.hidden = false
-            itemTwo.hidden = false
-            scoreTwo.hidden = false
+    @IBAction func switchOn(_ sender: AnyObject) {
+        if `switch`.isOn{
+            itemOne.isHidden = false
+            scoreOne.isHidden = false
+            itemTwo.isHidden = false
+            scoreTwo.isHidden = false
         } else {
-            itemOne.hidden = true
-            scoreOne.hidden = true
-            itemTwo.hidden = true
-            scoreTwo.hidden = true
+            itemOne.isHidden = true
+            scoreOne.isHidden = true
+            itemTwo.isHidden = true
+            scoreTwo.isHidden = true
         }
     }
     @IBOutlet weak var itemOne: UITextField!
@@ -46,8 +46,8 @@ class SetGoalOne: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var DestViewController : HomeView = segue.destinationViewController as! HomeView
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DestViewController : HomeView = segue.destination as! HomeView
         DestViewController.goalOut = goalSchoolMajor.text!
         DestViewController.totalGoalString = totalGoal.text!
         DestViewController.MandarinString = Mandarin.text!
